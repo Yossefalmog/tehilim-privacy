@@ -1,238 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="he" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>מדיניות פרטיות — הרבי</title>
-  <style>
-    :root {
-      --bg: #ffffff;
-      --text: #1c1917;
-      --muted: #57534e;
-      --accent: #7c3aed;
-      --border: #f5f5f4;
-    }
-    * { box-sizing: border-box; }
-    body {
-      font-family: 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      margin: 0;
-      padding: 32px 20px;
-      line-height: 1.7;
-      max-width: 760px;
-      margin-inline: auto;
-    }
-    header {
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 24px;
-      margin-bottom: 32px;
-    }
-    h1 {
-      font-size: 28px;
-      font-weight: 900;
-      letter-spacing: -0.5px;
-      margin: 0 0 6px;
-    }
-    .meta {
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 500;
-    }
-    h2 {
-      font-size: 20px;
-      font-weight: 800;
-      letter-spacing: -0.3px;
-      margin-top: 36px;
-      margin-bottom: 12px;
-    }
-    h3 {
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: -0.2px;
-      margin-top: 22px;
-      margin-bottom: 8px;
-      color: var(--text);
-    }
-    .quick-link {
-      display: block;
-      margin-top: 18px;
-      padding: 14px 18px;
-      background: #f5f3ff;
-      border: 1px solid #ddd6fe;
-      border-radius: 12px;
-      color: var(--accent);
-      font-weight: 700;
-      font-size: 14px;
-      text-decoration: none;
-    }
-    .quick-link:hover { background: #ede9fe; border-bottom-color: transparent; }
-    ol {
-      padding-inline-start: 22px;
-    }
-    ol li {
-      margin-bottom: 8px;
-    }
-    p, li {
-      font-size: 15px;
-      color: var(--text);
-    }
-    ul {
-      padding-inline-start: 22px;
-    }
-    li {
-      margin-bottom: 6px;
-    }
-    .accent {
-      color: var(--accent);
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-      border-bottom: 1px solid #ddd6fe;
-    }
-    a:hover { border-bottom-color: var(--accent); }
-    footer {
-      margin-top: 56px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 13px;
-    }
-  </style>
-</head>
-<body>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מדיניות הפרטיות — צדיק</title>
+<style>
+  :root { --indigo:#474672; --ink:#3f3f46; --muted:#78716c; --peach:#FFDDA9; --line:#EDEEF1 }
+  * { box-sizing:border-box }
+  body { margin:0; padding:0 20px 90px; background:#fff; color:var(--ink); line-height:1.8;
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Rubik,Heebo,Arial,sans-serif }
+  main { max-width:720px; margin:0 auto }
+  header { padding:52px 0 6px }
+  h1 { font-size:28px; color:var(--indigo); margin:0 0 6px }
+  .sub { color:var(--muted); font-size:15px; margin:0 }
+  .intro { font-size:17px; margin:20px 0 0 }
+  h2 { font-size:19px; color:var(--indigo); margin:34px 0 8px }
+  ul { padding-inline-start:22px; margin:8px 0 } li { margin:5px 0 }
+  a { color:var(--indigo) }
+  .note { background:#FAFAFB; border:1px solid var(--line); border-radius:14px; padding:14px 18px; margin:16px 0 }
+  nav { display:flex; flex-wrap:wrap; gap:10px; margin-top:34px }
+  nav a { background:#F4F5F7; color:var(--indigo); font-weight:700; text-decoration:none;
+          padding:11px 18px; border-radius:13px; font-size:15px }
+  footer { margin-top:40px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px }
+</style>
+<main>
   <header>
-    <h1>מדיניות פרטיות</h1>
-    <div class="meta">אפליקציית <span class="accent">הרבי</span> · עודכן לאחרונה: 29 ביוני 2026</div>
+    <h1>מדיניות הפרטיות</h1>
+    <p class="sub">צדיק — תהילים ביחד · עודכן ב־26 בספטמבר 2026</p>
   </header>
-
-  <p>
-    אנו מכבדים את פרטיותך. מסמך זה מתאר אילו נתונים אנו אוספים באפליקציית
-    <strong>הרבי</strong>, למה אנו אוספים אותם, וכיצד אנו שומרים עליהם.
-  </p>
-
-  <a href="#account-deletion" class="quick-link">
-    👈 לחץ כאן למידע על מחיקת חשבון ונתונים
-  </a>
-
-  <h2>1. מי אנחנו</h2>
-  <p>
-    אפליקציית "הרבי" מופעלת על-ידי <strong>יוסף אלמוג ממן</strong>, יבנה, ישראל.
-    לכל שאלה בנושא פרטיות ניתן ליצור קשר באימייל:
-    <a href="mailto:yossialmogm@gmail.com">yossialmogm@gmail.com</a>.
-  </p>
-
-  <h2>2. אילו נתונים אנו אוספים</h2>
-  <p>בעת השימוש באפליקציה אנו אוספים את הנתונים הבאים:</p>
+  <p class="intro">המדיניות הזו מסבירה איזה מידע נאסף, למה, ומה אפשר לעשות איתו. האפליקציה בחינם, אין בה פרסומות, ואין בה מעקב אחרי משתמשים לצורכי פרסום.</p>
+  <h2>המידע שנאסף</h2>
   <ul>
-    <li><strong>פרטי חשבון</strong> — שם תצוגה, כתובת אימייל, ותמונת פרופיל (כשמתחברים באמצעות Google).</li>
-    <li><strong>פעילות באפליקציה</strong> — פרקי תהילים שקראת, השתייכות לקבוצות, הודעות שכתבת בצ'אט הקבוצה ובדיונים.</li>
-    <li><strong>העדפות אישיות</strong> — קטגוריות מועדפות, יעד אישי לרצף קריאה, שעת תזכורת יומית.</li>
-    <li><strong>טוקן התראות (FCM)</strong> — מזהה ייחודי של המכשיר לשליחת התראות.</li>
-    <li><strong>נתוני שימוש בסיסיים</strong> — לוגים טכניים של שגיאות וביצועים, ללא זיהוי אישי.</li>
+    <li>פרטי חשבון — כתובת המייל, הכינוי שבחרת ותמונת הפרופיל, כפי שהם מגיעים מגוגל או מ‑Apple. בהתחברות עם Apple, אם בחרת להסתיר את הכתובת, נשמרת רק הכתובת המוסתרת שאפל מספקת.</li>
+    <li>פרטים מהרישום הראשוני — מגדר ומטרת התפילה, אם מסרת אותם. הם משמשים לניסוח הפניות ולהתאמת קבוצות מוצעות.</li>
+    <li>פעילות הקריאה — אילו פרקים סומנו כנקראו ומתי, מספר הפרקים ורצף הקריאה. זה הבסיס לחלוקת הפרקים בקבוצה ולדירוגים.</li>
+    <li>קבוצות ותוכן שיצרת — הקבוצות שאתה חבר בהן, הודעות בצ׳אט, פוסטים בדיונים, הקדשות ותמונת קבוצה.</li>
+    <li>העדפות התראות — אם הפעלת תזכורת: השעה שבחרת, אזור הזמן של המכשיר ומזהה ההתראות שלו.</li>
   </ul>
-
-  <h2>3. למה אנו אוספים את הנתונים</h2>
+  <div class="note">מה לא נאסף: אין באפליקציה כלי אנליטיקה, אין מזהי פרסום, אין מעקב בין אפליקציות ואתרים, ואין איסוף מקום. תמונות נקראות מהמכשיר רק כשאתה בוחר תמונה להעלאה, והאפליקציה אינה סורקת את הגלריה ברקע.</div>
+  <h2>למה המידע משמש</h2>
   <ul>
-    <li>לאפשר לך להצטרף לקבוצות ולקרוא תהילים יחד עם משתמשים אחרים.</li>
-    <li>להציג את ההתקדמות שלך ושל הקבוצה.</li>
-    <li>לשלוח תזכורות יומיות אם הפעלת אותן.</li>
-    <li>לדרג קבוצות ומשתמשים בלוח התוצאות (ranking).</li>
-    <li>לתמוך בך במקרה של בעיה טכנית.</li>
+    <li>לחלק את פרקי התהילים בין חברי הקבוצה ולהציג את ההתקדמות.</li>
+    <li>להציג את הכינוי והתמונה שלך לחברי הקבוצות שאתה בהן.</li>
+    <li>לשלוח תזכורת יומית, אם ביקשת.</li>
+    <li>לאפשר ניהול ומודרציה: הקדשות ותמונות קבוצה נבדקות לפני שהן מוצגות.</li>
   </ul>
-
-  <h2>4. שיתוף נתונים עם צדדים שלישיים</h2>
-  <p>
-    אנו <strong>לא מוכרים</strong> את הנתונים שלך לאף גורם. הנתונים נשמרים אצל ספקי שירות מהימנים:
-  </p>
+  <h2>מה רואים אחרים</h2>
+  <p>הכינוי ותמונת הפרופיל שלך, מספר הפרקים שקראת והפרקים שסימנת גלויים לחברי הקבוצות שאתה חבר בהן ולדירוגים. כתובת המייל שלך אינה מוצגת למשתמשים אחרים — אליה יש גישה רק למנהל האפליקציה, לצורכי תמיכה וניהול.</p>
+  <h2>איפה המידע נשמר</h2>
+  <p>המידע נשמר בשירות Supabase, בתשתית ענן מאובטחת ובחיבור מוצפן. ההרשאות מוגדרות כך שכל משתמש יכול לקרוא ולשנות רק את מה שנוגע אליו ואת תוכן הקבוצות שהוא חבר בהן.</p>
+  <h2>שירותים חיצוניים</h2>
   <ul>
-    <li><strong>Google Firebase</strong> — אחסון הנתונים, ניהול חשבונות, ושליחת התראות.</li>
-    <li><strong>Google Sign-In</strong> — להתחברות באמצעות חשבון Google.</li>
+    <li>Google Sign-In ו‑Apple Sign in — לאימות ההתחברות בלבד.</li>
+    <li>Supabase — אחסון הנתונים והחשבונות.</li>
+    <li>Expo Push Notifications — לשליחת תזכורות, כשהתכונה מופעלת.</li>
   </ul>
-  <p>שני השירותים פועלים בכפוף למדיניות הפרטיות של Google.</p>
-
-  <h2 id="account-deletion">5. מחיקת חשבון ונתונים</h2>
-  <p>
-    אנו מכבדים את זכותך לשלוט בנתונים שלך. בכל עת תוכל לבקש מחיקה מלאה של החשבון שלך ושל כל
-    הנתונים הקשורים אליו באפליקציית <strong>הרבי</strong>, ללא עלות וללא צורך בנימוק.
-  </p>
-
-  <h3>5.1 איך לבקש מחיקת חשבון</h3>
-  <p>
-    כדי לבקש מחיקת חשבון, יש לבצע את השלבים הבאים:
-  </p>
-  <ol>
-    <li>שלח אימייל לכתובת
-        <a href="mailto:yossialmogm@gmail.com?subject=%D7%91%D7%A7%D7%A9%D7%94%20%D7%9C%D7%9E%D7%97%D7%99%D7%A7%D7%AA%20%D7%97%D7%A9%D7%91%D7%95%D7%9F%20-%20%D7%AA%D7%94%D7%99%D7%9C%D7%99%D7%9D%20%D7%99%D7%97%D7%93%D7%99%D7%95">
-        yossialmogm@gmail.com</a>.
-    </li>
-    <li>בנושא המייל ציין: <strong>"בקשה למחיקת חשבון — הרבי"</strong>.</li>
-    <li>בגוף המייל ציין את כתובת המייל שאיתה אתה רשום באפליקציה.</li>
-    <li>תקבל אישור על קבלת הבקשה תוך 7 ימי עסקים.</li>
-    <li>הנתונים יימחקו במלואם תוך <strong>30 ימי עסקים</strong> מקבלת הבקשה.</li>
-  </ol>
-
-  <h3>5.2 אילו נתונים יימחקו</h3>
-  <p>בעת מחיקת החשבון, הנתונים הבאים יימחקו <strong>לצמיתות</strong>:</p>
-  <ul>
-    <li>פרטי החשבון שלך — שם תצוגה, כתובת אימייל, ותמונת פרופיל.</li>
-    <li>העדפותיך האישיות — קטגוריות מועדפות, יעד אישי, שעת תזכורת.</li>
-    <li>טוקן ההתראות (FCM) של המכשיר שלך.</li>
-    <li>חברותך בקבוצות, כולל הצטרפויות, יציאות, וכל ההיסטוריה האישית בקבוצות.</li>
-    <li>פרקי התהילים שקראת, הקצאות יומיות, וההיסטוריה האישית שלך.</li>
-    <li>הודעותיך בצ'אט קבוצתי ובדיוני הקבוצה.</li>
-    <li>פוסטים ותגובות שכתבת בדיונים.</li>
-    <li>סטטיסטיקות אישיות בלוחות התוצאות (ranking).</li>
-  </ul>
-
-  <h3>5.3 אילו נתונים יישמרו (ולמה)</h3>
-  <p>
-    הנתונים הבאים <strong>יישמרו</strong> גם לאחר מחיקת החשבון:
-  </p>
-  <ul>
-    <li><strong>נתונים אגרגטיביים אנונימיים</strong> — מספרים סטטיסטיים שלא מאפשרים זיהוי אישי
-        (לדוגמה: "סך הפרקים שנקראו על-ידי כל המשתמשים היום"). יישמרו לצורך שמירת תקינות הסטטיסטיקות
-        הכלליות של האפליקציה.</li>
-    <li><strong>לוגים טכניים</strong> — לוגים של שגיאות מערכת ופעולות בצד שרת. יישמרו עד
-        <strong>90 ימים</strong> לצורך אבחון בעיות, ואז יימחקו אוטומטית.</li>
-  </ul>
-  <p>
-    כל הנתונים השמורים לאחר המחיקה <strong>אינם ניתנים לקישור</strong> לזהותך — הם אנונימיים לחלוטין.
-  </p>
-
-  <h3>5.4 תקופת שמירה של נתונים במהלך השימוש</h3>
-  <p>
-    כל עוד החשבון שלך פעיל, הנתונים נשמרים בלי הגבלת זמן כדי לאפשר את פעולת האפליקציה
-    (היסטוריית קריאה, חברות בקבוצות, וכו'). אם לא תיכנס לאפליקציה במשך <strong>3 שנים רצופות</strong>,
-    החשבון שלך יסומן כלא פעיל ונשלח אליך מייל עם אפשרות למחוק אותו או להמשיך לשמור אותו.
-  </p>
-
-  <h2>6. אבטחה</h2>
-  <p>
-    אנו משתמשים בתשתית Google Firebase שמיישמת אבטחה ברמה ארגונית — תעבורה מוצפנת ב-HTTPS,
-    גישה מבוקרת באמצעות חוקי Firestore, ופונקציות צד-שרת מאומתות.
-  </p>
-
-  <h2>7. ילדים מתחת לגיל 13</h2>
-  <p>
-    האפליקציה אינה מיועדת לילדים מתחת לגיל 13. אם נודע לנו שאספנו בטעות נתונים על ילד מתחת לגיל זה,
-    נמחק אותם מיידית.
-  </p>
-
-  <h2>8. שינויים במדיניות זו</h2>
-  <p>
-    אנו עשויים לעדכן את מדיניות הפרטיות מעת לעת. המסמך המעודכן יפורסם בכתובת זו עם תאריך עדכון חדש.
-  </p>
-
-  <h2>9. יצירת קשר</h2>
-  <p>
-    לכל שאלה, בקשה, או תלונה בנושא פרטיות:<br>
-    אימייל: <a href="mailto:yossialmogm@gmail.com">yossialmogm@gmail.com</a>
-  </p>
-
-  <footer>
-    © 2026 הרבי · יוסף אלמוג ממן · יבנה, ישראל
-  </footer>
-</body>
+  <p>המידע אינו נמכר ואינו מועבר למפרסמים.</p>
+  <h2>שמירה ומחיקה</h2>
+  <p>המידע נשמר כל עוד החשבון קיים. אפשר למחוק את החשבון מתוך האפליקציה — הגדרות ← מחיקת חשבון — והפרטים האישיים, היסטוריית הקריאה, ההודעות וההקדשות יימחקו לצמיתות. קבוצה שאתה מנהל תעבור לחבר הראשון שהצטרף אליה, ואם אתה היחיד בה היא תימחק.</p>
+  <h2>ילדים</h2>
+  <p>האפליקציה מיועדת לכל הגילים ואינה אוספת מידע מעבר למתואר כאן. היא אינה מכוונת באופן ייעודי לילדים מתחת לגיל 13.</p>
+  <h2>שינויים</h2>
+  <p>אם המדיניות תתעדכן, התאריך בראש העמוד ישתנה.</p>
+  <h2>יצירת קשר</h2>
+  <p>לשאלות, בקשות מחיקה או כל דבר אחר: yossialmogm@gmail.com</p>
+  <nav>
+    <a href="terms.html">תנאי השימוש</a>
+    <a href="support.html">תמיכה</a>
+  </nav>
+  <footer>צדיק — תהילים ביחד · יוסף אלמוג ממן · <a href="mailto:yossialmogm@gmail.com">yossialmogm@gmail.com</a></footer>
+</main>
 </html>
